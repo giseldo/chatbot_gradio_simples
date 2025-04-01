@@ -17,7 +17,7 @@ com base em uma mensagem de entrada. Dependendo da intenção detectada (saudar,
 o chatbot fornece uma resposta apropriada selecionada aleatoriamente de um conjunto predefinido.
 
 ## Requisitos
-- Python 3.6 ou superior
+- Python 3.10 ou superior
 - Bibliotecas Python:
   - gradio
   - scikit-learn
