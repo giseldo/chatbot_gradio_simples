@@ -1,13 +1,11 @@
 import gradio as gr
 import joblib
+import random
 import os
 
-# Verificar se o modelo existe, se não existir, treinar
 if not os.path.exists('intent_model.pkl'):
-    import subprocess
-    subprocess.run(['python', 'train_intent_model.py'])
+    print("Modelo de classificação de intenções carregado com sucesso!, execute o train_intent_model.py")
 
-# Carregar o modelo
 try:
     modelo = joblib.load('intent_model.pkl')
     print("Modelo de classificação de intenções carregado com sucesso!")
@@ -34,8 +32,6 @@ respostas = {
         "Ficaremos felizes em recebê-lo como cliente! Para abrir uma conta, você pode começar o processo online em nossa página de cadastro.",
     ]
 }
-
-import random
 
 def response(message, history):
     if modelo is None:

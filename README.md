@@ -50,3 +50,9 @@ Exemplos de mensagens que o chatbot pode reconhecer:
 ## Personalização
 Você pode expandir o chatbot adicionando novas intenções no arquivo train_intent_model.py
 e adicionando respostas correspondentes no arquivo chatbot.py.
+
+## Print da Tela
+
+A imagem abaixo mostra a interface do chatbot em funcionamento:
+
+![Interface do Chatbot](image.png)
